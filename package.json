@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "9.4.0",
+    "npm": "6.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
