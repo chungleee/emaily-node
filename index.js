@@ -6,7 +6,7 @@ const app = express();
 
 // routes
 app.get('/', (req, res) => {
-  res.send({ hi: 'there' });
+  res.send({ bye: 'buddy' });
 });
 
 // server
