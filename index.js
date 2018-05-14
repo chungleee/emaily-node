@@ -1,7 +1,14 @@
 // imports
 const express = require('express');
+const mongoose = require('mongoose');
 require('./services/passport');
 const authRoutes = require('./routes/authRoutes');
+const { mongoURI } = require('./config/keys');
+
+// mongoose setup - connecting to mongodb
+mongoose
+  .connect(mongoURI)
+  .then(console.log('connected to mongodb'))
 
 // app initialization
 const app = express();
